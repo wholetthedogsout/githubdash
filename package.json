@@ -1,12 +1,12 @@
 {
-  "name": "GitHub Dash",
+  "name": "GitHubDash",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Brendan Collins",
   "license": "ISC",
   "devDependencies": {
     "gulp-autoprefixer": "^2.3.1",

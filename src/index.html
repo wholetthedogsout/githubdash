@@ -3,8 +3,59 @@
     <head>
       <meta charset="GitHubDash">
       <title>Title</title>
-    <h1>Helllo!!!!</h1>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
+      <div class="sidebar">
+        <form class = "userform">
+          <input type = "text" class = "userinput" placeholder="User Name">
+        </form>
+        <div class="user-info">
+        </div>
+      </div>
+    </main>
+
+    <div class="repo-info">
+    </div>
+      <script id="error" type="text/html">
+        <div class="error">
+          <%- m.message %>
+        </div>
+      </script>
+
+      <script id="name-avatar" type="text/html">
+        <a class="gitlink" href="<%- m.html_url %>">
+          <img class="user-avatar" src="<%- m.avatar_url %>" alt="avatar">
+          <ul class = "user-details">
+            <li class="user-name"><br>
+              <%-m.login %>
+            </li>
+            <li class="member_since"><br>
+            Member Since: <%- m.created_at %>
+            </li>
+            <li class="number_repos"><br>
+            Created: <%- m.public_repos %> repos
+            </li>
+          </ul>
+        </a>
+      </script>
+
+    <script id="repolist" type="text/html">
+      <h1>Repos Authored</h1>
+      <% _.each(m, function(m) { %>
+
+      <ul class="repos">
+        <a href="<%- m.html_url %>">
+          <li><%- m.name %></li>
+        </a>
+      </ul>
+      <% }); %>
+    </script>
+
+      <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/underscore.js"></script>
+      <script src="js/backbone.js"></script>
+
+      <script src="js/main.js"></script>
     </body>
   </html>

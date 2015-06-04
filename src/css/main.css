@@ -46,6 +46,55 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: pink;
+  background-color: #F1F1F1;
   color: white;
   font-size: 3em; }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4em;
+  background-color: #665178;
+  box-shadow: 3px 0px 2px grey; }
+
+.userform {
+  padding-top: .5em;
+  width: 69%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px; }
+
+a {
+  text-decoration: none; }
+
+.user-details {
+  color: #eee;
+  font-size: .4em;
+  list-style-type: none;
+  line-height: 1.6em;
+  font-family: sans-serif;
+  padding-left: 1em; }
+
+.user-avatar {
+  width: 3em;
+  padding: .43em;
+  border-radius: 5px; }
+
+.repos {
+  padding-left: 6em;
+  line-height: .8em;
+  color: grey; }
+
+.repos a {
+  text-decoration: none;
+  color: grey;
+  font-size: .4em; }
+
+h1 {
+  padding-top: .6em;
+  padding-left: 6em;
+  padding-bottom: .6em;
+  line-height: .8em;
+  color: grey; }
